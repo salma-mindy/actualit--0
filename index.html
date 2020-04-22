@@ -1,65 +1,237 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html>
 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Le rapport sur la sécurité des frameworks front-end JavaScript par Snyk</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="text-center">
-        <h1>Le rapport de Snyk sur la sécurité des frameworks JavaScript et autres framework front-end</h1>
-      </div>
-      <section class="mt-2 mb-2">
-        <h5></h5>
-        <div class="">
-          <p class="lead"></p>
-          <p class="lead"></p>
-          <p class="lead"></p>
-        </div>
-      </section>
-      <section class="mt-2 mb-2">
-        <h5></h5>
-        <div class="">
-          <p class="lead"></p>
-          <p class="lead"></p>
-          <p class="lead"></p>
-        </div>
-      </section>
-      <section class="mt-2 mb-2">
-        <h5></h5>
-        <div class="">
-          <p class="lead"></p>
-          <p class="lead"></p>
-          <p class="lead"></p>
-        </div>
-      </section>
-      <section class="mt-2 mb-2">
-        <h5></h5>
-        <div class="">
-          <p class="lead"></p>
-          <p class="lead"></p>
-          <p class="lead"></p>
-        </div>
-      </section class="mt-2 mb-2">
-      <section>
-        <h5>Bootstrap security</h5>
-        <div class="">
-          <p class="lead"></p>
-          <p class="lead"></p>
-          <p class="lead"></p>
-        </div>
-      </section>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .bg-image {
+            background-image: url("https://snyk.io/wp-content/uploads/JavaScript-Report-Feature-.png");
+            filter: blur(2px);
+            -webkit-filter: blur(2px);
+            height: 60vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .bg-text {
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            border: 3px solid #f1f1f1;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        p.lead {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
+        
+        .title {
+            color: grey;
+            font-size: 18px;
+        }
+        
+        button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+        
+        a {
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+        }
+        
+        button:hover,
+        a:hover {
+            opacity: 0.7;
+        }
+    </style>
+    <title>State of Javascript frameworks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="bg-image"></div>
+
+    <div class="bg-text">
+        <h4>
+            le rapport de sécurité State of Javascript frameworks
+        </h4>
+        <h1 style="font-size:50px">
+            Snyk
+        </h1>
+        <p>
+            une plate-forme de sécurité open-source
+        </p>
     </div>
 
-    <!-- Optional JavaScript -->
+    <main class="container mt-4">
+        <div class="row">
+            <div class="col-md-9">
+                <p class="lead">
+                    <span style="color: #493050;">
+                        Ce rapport porte principalement sur les vulnérabilités et les risques en matière de sécurité dans les écosystèmes React et Angular.<br> Il parle en outre des :
+                    </span>
+                    <ul>
+                        <li>Risques de sécurité liés aux dépendances indirectes</li>
+                        <li>Vulnérabilités de sécurité dans l’écosystème des frameworks Angular et React</li>
+                        <li>Sécurité Vue.js</li>
+                        <li>Sécurité Bootstrap</li>
+                    </ul>
+                </p>
+                <hr>
+                <div class="mb-2">
+                    En plus d’énumérer les vulnérabilités de sécurité dans React et Angular, le rapport partage également la posture de sécurité globale des deux. Cela comprend les conventions de codage sécurisé, les capacités sécurisées intégrées, les politiques de divulgation
+                    responsable et la documentation de sécurité dédiée au projet.
+                </div>
+                <h3 style="color: #493050;">Vulnérabilités de sécurité dans l’écosystème des frameworks Angular et React</h3>
+                <div class="mt-4 mb-4">
+                    <h4 style="color: #493050;">React</h4>
+                    <div class="mt-1 mb-2">Dans le cas de React, Snyk a trouvé quatre packages malveillants, à savoir : <br>
+                        <strong>react-datepicker-plus</strong>, <strong>react-dates-sc </strong>, <strong>awesome_react_utility</strong> et <strong>reactserver-native</strong>.
+                        <br>Ceux-ci contiennent des codes malveillants qui récoltent des cartes de crédit et d’autres informations sensibles et attaquent des modules compromis sur l’écosystème React.</div>
+                    <div class="mt-1 mb-2">Bibliothèques vulnérables notables trouvés dans l’écosystème de React au cours de cette étude :</div>
+                    <div class="">
+                        <ul>
+                            <li>Le bibliothèque <strong>react-marked-markdown</strong> présente une vulnérabilité XSS de grande gravité qui n’a pas encore de correctif.</li>
+                            <li>La bibliothèque <strong>preact-render-to-string</strong> est vulnérable à XSS dans toutes les versions antérieures à la version 3.7.2.</li>
+                            <li>La bibliothèque <strong>react-svg</strong> a une vulnérabilité XSS de grande gravité qui a été divulguée par le chercheur en sécurité Ron Perris affectant toutes les versions antérieures à la version 2.2.18.</li>
+                            <li>La bibliothèque <strong>mui-datatables</strong> présente la vulnérabilité CSV Injection.</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="mt-2 mb-4">
+                    <h4 style="color: #493050;">Angular</h4>
+                    <div class="mt-1 mb-2">
+                        Dans le cas de Angular, l’équipe de recherche Snyk a divisé l’écosystème Angular en trois domaines :<br>
+                        <ul>
+                            <li>Modules d’écosystème Angular,</li>
+                            <li>versions malveillantes de modules,</li>
+                            <li>outils de développement.</li>
+                        </ul>
+                        Parlant des <strong>versions malveillantes des modules</strong> , le rapport énumère trois versions malveillantes pour les modules : <b>angular-bmap</b>, <b>ng-ui-library</b> et <b>ngx-pica</b>.<br> - La version « angular-bmap
+                        » 0.0.9 comprenait un code malveillant qui recueillait des renseignements de nature délicate sur les mots de passe et les cartes de crédit des formulaires. Il a ensuite utilisé pour envoyer ces informations à une URL contrôlée
+                        par un attaquant. Heureusement, cette version est maintenant retirée du registre npm. <br> - La version 1.0.987 de « ng-ui-library » a le même code malveillant que « angular-bmap » 0.0.9, bien qu’elle soit toujours maintenue. <br>                        - Le troisième module, « ngx-pica » (des versions 1.1.4 à 1.1.6), a également le même code malveillant que les deux modules ci-dessus.<br> <br> Dans l’outillage des développeurs, le module <strong>angular-http-server</strong> était
+                        vulnérable à la traversée du répertoire deux fois.
+                        <br> <br> L’écosystème du module angulaire comporte les modules vulnérables suivants :
+                        <br>
+                        <strong>ngx-bootstrap</strong>,
+                        <strong>ag-grid-community</strong>,
+                        <strong>ag-grid</strong>,
+                        <strong>ng-dialog</strong>,
+                        <strong>angular-gettext</strong>,
+                        <strong>angular-jwt</strong>,
+                        <strong>textangular</strong>,
+                        <strong>angular-froala</strong>,
+                        <strong>angular-redactor</strong>,
+                        <strong>i18n-node-angular</strong>.
+                    </div>
+                </div>
+
+                <h3 style="color: #493050;">Risques de sécurité liés aux dépendances indirectes</h3>
+                <div class="mt-2 mb-3">
+                    Les projets React et Angular sont souvent générés avec un outil d’échafaudage qui fournit une plaque chauffante. Dans React, nous utilisons la commande <em>npm « create-react-app »</em>, alors que dans Angular, nous utilisons la commande
+                    <em>npm « @angular/cli »</em>. Dans un exemple de projet React et Angular créé à l’aide de ces outils d’échafaudage, il a été constaté que les deux incluaient des dépendances de développement avec des vulnérabilités. La bonne chose
+                    est qu’aucun d’eux n’avait de problèmes de sécurité de dépendance à la production.
+                    <br><br>
+                    <em style="font-size: small;">« Il est important de noter qu’Angular s’appuie sur 952 dépendances, qui contiennent au total deux vulnérabilités; React s’appuie sur 1257 dépendances, contenant trois vulnérabilités et un problème potentiel de compatibilité de licence », indique le rapport.</em>
+                </div>
+                <h3 style="color: #493050;">Sécurité Vue.js</h3>
+                <div class="mt-2 mb-5">
+                    <div class="mb-2">
+                        Au total, quatre vulnérabilités ont été détectées dans le projet de base Vue.js couvrant la période de décembre 2017 à août 2018 : trois expressions régulières moyennes et une faible vulnérabilité de déni de service.
+                    </div>
+                    <div class="mt-2">
+                        Quant à l’écosystème du module de Vue, le rapport énumère les modules vulnérables suivants :
+                        <ul>
+                            <li>La bibliothèque <strong>bootstrap-vue</strong> présente une vulnérabilité XSS de grande gravité qui a été divulguée en janvier 2019 et a affecte toutes les versions antérieures</li>
+                            <li>Une version malveillante a été publiée dans la bibliothèque <strong>vue-backbone</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+                <h3 style="color: #493050;">Sécurité Bootstrap</h3>
+                <div class="mt-3 mb-5">
+                    <div class="mb-2">
+                        L’équipe de recherche de Snyk a pu suivre un total de sept vulnérabilités XSS dans Bootstrap. Sur ces sept, trois ont été divulgués en 2019 pour les versions récentes de Bootstrap v3 et trois vulnérabilités de sécurité ont été divulguées en 2018, dont
+                        l’une affecte la nouvelle version 4.x Bootstrap. Toutes ces vulnérabilités ont des correctifs de sécurité et un chemin de mise à niveau pour les utilisateurs afin de remédier aux risques.
+                    </div>
+                    <div>
+                        Parmi les modules vulnérables de l’écosystème Bootstrap figurent :
+                        <ul>
+                            <li>La bibliothèque <strong>bootstrap-markdown</strong> qui comprend une vulnérabilité XSS non indexée affectant toutes les versions.</li>
+                            <li>La bibliothèque <strong>bootstrap-vuejs</strong> présente une vulnérabilité XSS de grande gravité qui affecte toutes les versions antérieures à bootstrap-vue 2.0.0-rc.12.</li>
+                            <li>La bibliothèque <strong>bootstrap-select</strong> comprend également une vulnérabilité XSS de grande gravité.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-3 text-center">
+                    Source: <a href="https://snyk.io/blog/javascript-frameworks-security-report-2019/">Snyk</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h2 style="text-align:center">Auteur</h2>
+
+                <div class="card">
+                    <img src="https://media-exp1.licdn.com/dms/image/C5603AQEdHvhwankOnQ/profile-displayphoto-shrink_100_100/0?e=1593043200&v=beta&t=f7VLwOg26e_O4D5XnM2Q0AOxmt40Me4jV6xXEgm0jqo" alt="John" style="width:100%">
+                    <h3>Sheila Melissa</h3>
+                    <div style="margin: 24px 0;">
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </div>
+                    <p><button>contacter</button></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+</body>
+</body>
+
 </html>
